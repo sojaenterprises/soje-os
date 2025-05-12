@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOJEÑOS - Frutas y Verduras</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4fdf4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #388e3c;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url('soja2.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h3 {
+            color: #2e7d32;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li::before {
+            content: '🍃 ';
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SOJEÑOS</h1>
+        <p>Frutas y Verduras de calidad – Venta mayorista, minorista y exportación</p>
+    </header>
+
+    <nav>
+        <a href="http://127.0.0.1:5500/Index.html">Inicio</a>
+        <a href="http://127.0.0.1:5500/nosotros.html">Nosotros</a>
+        <a href="http://127.0.0.1:5500/product.html">Productos</a>
+        <a href="http://127.0.0.1:5500/exportaciones.html">Exportaciones</a>
+        <a href="http://127.0.0.1:5500/contacto.html">Contacto</a>
+    </nav>
+
+    <div id="inicio" class="hero">
+        <h2>Frescura natural directo del productor</h2>
+    </div>
+
+    <footer>
+        &copy; 2025 SOJEÑOS - Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
