@@ -4,95 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOJEÑOS - Productos</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4fdf4;
-            color: #333;
-        }
-
-        header {
-            background-color: #4caf50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        nav {
-            background-color: #388e3c;
-            padding: 10px 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            font-size: 1em;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            background-image: url('soja2.jpeg');
-            background-size: cover;
-            background-position: center;
-            height: 600px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 2px 2px 4px #000;
-        }
-
-        .hero h2 {
-            font-size: 2.5em;
-        }
-
-        section {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        section h3 {
-            color: #2e7d32;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #2e7d32;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        ul li::before {
-            content: '🍃 ';
-        }
-    </style>
+    <link rel="stylesheet" href="productos.css">
 </head>
 <body>
 
@@ -116,17 +28,220 @@
     <section id="productos">
         <h3>Productos</h3>
         <p>Ofrecemos una amplia variedad de frutas y verduras frescas:</p>
-        <ul>
-            <li>Tomates, lechugas, zanahorias</li>
-            <li>Manzanas, naranjas, peras</li>
-            <li>Productos de estación y orgánicos</li>
-            <li>Pedidos personalizados para negocios</li>
-        </ul>
+
+        <section class="VerdurasPaquete">
+
+
+            <div class="PaqueteIndividual">
+                <p>tomate</p>
+                <img src="img_pro/tomate.jfif" alt="tomate" class="VerdurasPaquete">
+                <span>Precio x KG: 2000</span>
+                <input type="number" id="cantidad-tomate" value="1" min="1"> kg<br>
+                <button onclick="agregarAlCarrito('Tomate', 2000, 'cantidad-tomate')">Agregar al carrito</button>
+            </div>
+
+            <div class="PaqueteIndividual">
+                <p>lechuga</p>
+                <img src="img_pro/lechuga.jfif" alt="tomate" class="VerdurasPaquete">
+                <span>Precio x KG: 2000</span>
+                <input type="number" id="cantidad-lechuga" value="1" min="1"> kg<br>
+                <button onclick="agregarAlCarrito('lechuga', 2000, 'cantidad-lechuga')">Agregar al carrito</button>
+            </div>
+
+            <div class="PaqueteIndividual">
+                <p>zanahoria</p>
+                <img src="img_pro/zanahoria.jfif" alt="tomate">
+                <span>Precio x KG: 2000</span>
+                <input type="number" id="cantidad-Zanahoria" value="1" min="1"> kg<br>
+                <button onclick="agregarAlCarrito('Zanahoria', 2000, 'cantidad-Zanahoria')">Agregar al carrito</button>
+            </div>
+
+            <div class="PaqueteIndividual">
+                <p>naranjas</p>
+                <img src="img_pro/naranja.jfif" alt="tomate">
+                <span>Precio x KG: 2000</span>
+                <input type="number" id="cantidad-Naranja" value="1" min="1"> kg<br>
+                <button onclick="agregarAlCarrito('Naranja', 2000, 'cantidad-Naranja')">Agregar al carrito</button>
+            </div>
+
+            <div class="PaqueteIndividual">
+                <p>mandarina</p>
+                <img src="img_pro/mandarina.jfif" alt="tomate">
+                <span>Precio x KG: 2000</span>
+                <input type="number" id="cantidad-Mandarina" value="1" min="1"> kg<br>
+                <button onclick="agregarAlCarrito('Mandarina', 2000, 'cantidad-Mandarina')">Agregar al carrito</button>
+            </div>
+
+            <div class="PaqueteIndividual">
+                <p>anana</p>
+                <img src="img_pro/anana.jfif" alt="tomate">
+                <span>Precio x KG: 2000</span>
+                <input type="number" id="cantidad-Anana" value="1" min="1"> kg<br>
+                <button onclick="agregarAlCarrito('Anana', 2000, 'cantidad-Anana')">Agregar al carrito</button>
+            </div>
+
+            <div class="PaqueteIndividual">
+                <p>banana</p>
+                <img src="img_pro/banana.jfif" alt="tomate">
+                <span>Precio x KG: 2000</span>
+                <input type="number" id="cantidad-Banana" value="1" min="1"> kg<br>
+                <button onclick="agregarAlCarrito('Banana', 2000, 'cantidad-Banana')">Agregar al carrito</button>
+            </div>
+
+            <div class="PaqueteIndividual">
+                <p>granada</p>
+                <img src="img_pro/granada.jfif" alt="tomate">
+                <span>Precio x KG: 2000</span>
+                <input type="number" id="cantidad-Granada" value="1" min="1"> kg<br>
+                <button onclick="agregarAlCarrito('Granada', 2000, 'cantidad-Granada')">Agregar al carrito</button>
+            </div>
+
+            <div class="PaqueteIndividual">
+                <p>limon</p>
+                <img src="img_pro/limon.jfif" alt="tomate">
+                <span>Precio x KG: 2000</span>
+                <input type="number" id="cantidad-Limon" value="1" min="1"> kg<br>
+                <button onclick="agregarAlCarrito('Limon', 2000, 'cantidad-Limon')">Agregar al carrito</button>
+            </div>
+
+            <div class="PaqueteIndividual">
+                <p>Manzanas</p>
+                <img src="img_pro/manzana.jfif" alt="tomate">
+                <span>Precio x KG: 2000</span>
+                <input type="number" id="cantidad-Manzana" value="1" min="1"> kg<br>
+                <button onclick="agregarAlCarrito('Manzana', 2000, 'cantidad-Manzana')">Agregar al carrito</button>
+            </div>
+
+            <div class="PaqueteIndividual">
+                <p>peras</p>
+                <img src="img_pro/pera.jfif" alt="tomate">
+                <span>Precio x KG: 2000</span>
+                <input type="number" id="cantidad-Pera" value="1" min="1"> kg<br>
+                <button onclick="agregarAlCarrito('Pera', 2000, 'cantidad-Pera')">Agregar al carrito</button>
+            </div>
+
+            <div class="PaqueteIndividual">
+                <p>pomelo</p>
+                <img src="img_pro/pomelo.jfif" alt="tomate">
+                <span>Precio x KG: 2000</span>
+                <input type="number" id="cantidad-Pomelo" value="1" min="1"> kg<br>
+                <button onclick="agregarAlCarrito('Pomelo', 2000, 'cantidad-Pomelo')">Agregar al carrito</button>
+            </div>
+
+            <div class="PaqueteIndividual">
+                <p>Sandia</p>
+                <img src="img_pro/sandia.jfif" alt="tomate">
+                <span>Precio x KG: 2000</span>
+                <input type="number" id="cantidad-Sandia" value="1" min="1"> kg<br>
+                <button onclick="agregarAlCarrito('Sandia', 2000, 'cantidad-Sandia')">Agregar al carrito</button>
+            </div>
+
+            <div class="PaqueteIndividual">
+                <p>uva</p>
+                <img src="img_pro/uva.jfif" alt="tomate">
+                <span>Precio x KG: 2000</span>
+                <input type="number" id="cantidad-Uva" value="1" min="1"> kg<br>
+                <button onclick="agregarAlCarrito('Uva', 2000, 'cantidad-Uva')">Agregar al carrito</button>
+            </div>
+
+        </section>
+
+        <p>Productos de estación y orgánicos</p>
+        <p>Pedidos personalizados para negocis</p>
+
+        
+
+        
     </section>
 
     <footer>
         &copy; 2025 SOJEÑOS - Todos los derechos reservados.
     </footer>
+
+
+
+    <div id="carrito-container">
+        <button id="toggle-carrito">🛒 Carrito (<span id="carrito-cantidad">0</span>)</button>
+        <div id="carrito" class="oculto">
+          <h3>Tu carrito</h3>
+          <ul id="lista-carrito"></ul>
+          <p><strong>Total:</strong> $<span id="total">0</span></p>
+          <button id="vaciar-carrito">Vaciar carrito</button>
+        </div>
+      </div>
+
+    <aside id="carrito">
+        <h3>Carrito</h3>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total">0</span></p>
+    </aside>
+
+
+
+
+
+    <script>
+        const carrito = [];
+        let total = 0;
+        
+        function agregarAlCarrito(nombre, precioUnitario, inputId) {
+          const cantidadInput = document.getElementById(inputId);
+          const cantidad = parseInt(cantidadInput.value);
+        
+          if (isNaN(cantidad) || cantidad < 1) {
+            alert("Por favor, ingrese una cantidad válida.");
+            return;
+          }
+        
+          const itemExistente = carrito.find(item => item.nombre === nombre);
+        
+          if (itemExistente) {
+            itemExistente.cantidad += cantidad;
+            itemExistente.subtotal = itemExistente.cantidad * itemExistente.precio;
+          } else {
+            carrito.push({
+              nombre,
+              precio: precioUnitario,
+              cantidad: cantidad,
+              subtotal: precioUnitario * cantidad
+            });
+          }
+        
+          total = carrito.reduce((acc, item) => acc + item.subtotal, 0);
+          actualizarCarrito();
+        }
+        
+        function actualizarCarrito() {
+          const lista = document.getElementById("lista-carrito");
+          const totalSpan = document.getElementById("total");
+          const cantidadSpan = document.getElementById("carrito-cantidad");
+        
+          lista.innerHTML = "";
+        
+          carrito.forEach(item => {
+            const li = document.createElement("li");
+            li.textContent = `${item.nombre} - ${item.cantidad}kg - $${item.subtotal}`;
+            lista.appendChild(li);
+          });
+        
+          totalSpan.textContent = total;
+          cantidadSpan.textContent = carrito.reduce((sum, item) => sum + item.cantidad, 0);
+        }
+        
+        document.getElementById("toggle-carrito").addEventListener("click", () => {
+          document.getElementById("carrito").classList.toggle("oculto");
+        });
+        
+        document.getElementById("vaciar-carrito").addEventListener("click", () => {
+          carrito.length = 0;
+          total = 0;
+          actualizarCarrito();
+        });
+        
+      </script>
+      
+    
+    
 
 </body>
 </html>
